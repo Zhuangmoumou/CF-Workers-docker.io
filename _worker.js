@@ -1,11 +1,11 @@
 // _worker.js
 
 // Docker镜像仓库主机地址
-let hub_host = 'registry-1.docker.io'
+let hub_host = 'dockerproxy.cn'
 // Docker认证服务器地址
 const auth_url = 'https://auth.docker.io'
 // 自定义的工作服务器地址
-let workers_url = 'https://你的域名'
+let workers_url = 'https://hub.413121.xyz'
 
 let 屏蔽爬虫UA = ['netcraft'];
 
@@ -23,7 +23,7 @@ function routeByHosts(host) {
 		"nvcr": "nvcr.io",
 		
 		// 测试环境
-		"test": "registry-1.docker.io",
+		"test": "dockerproxy.cn",
 	};
 
 	if (host in routes) return [ routes[host], false ];
